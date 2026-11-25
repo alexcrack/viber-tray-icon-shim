@@ -1,0 +1,15 @@
+# Build output
+/build/
+*.so
+*.o
+
+# Icon previews
+*.png
+!/assets/*.png
+
+# Editors / OS
+*~
+*.swp
+.vscode/
+.idea/
+.DS_Store

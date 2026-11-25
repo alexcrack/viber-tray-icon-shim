@@ -1,0 +1,6 @@
+#!/bin/sh
+# Launch Viber with a monochrome, theme-colored tray icon.
+L="$HOME/.local/lib/viber-tray"
+export XDG_DATA_DIRS="$L/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+export LD_PRELOAD="$L/viber-tray-shim.so${LD_PRELOAD:+:$LD_PRELOAD}"
+cd /opt/viber && exec /opt/viber/Viber "$@"
